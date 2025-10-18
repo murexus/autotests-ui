@@ -4,16 +4,56 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        h6 {
+            font-size: 15px
+        }
+
         .h2-text {
             color: red
+        }
+
+        .h6-text {
+            color: yellow
+        }
+
+        #h1-text {
+            font-size: 50px
+        }
+
+        div.python > a {
+            color: green
+        }
+
+        ul li {
+            color: green
+        }
+
+        input[type="text"]{
+            background-color: blue
+        }
+
+        a:hover {
+            color: red
+        }
+
+        input[type="text"]:hover{
+            background-color: red
+        }
+
+        li::marker{
+            color: red
+        }
+
+        ul > li:nth-child(2){
+            color: blue
         }
     </style>
 </head>
 <body>
-<div>
+<div class="python">
     <h1 id="h1-text">h1 text</h1>
     <h2 class="h2-text">h2 text</h2>
-    <h3 class="h2-text">h3 text</h3>
+    <h6 class="h2-text">h3 text</h6>
     <p>Перед публикацией изменений и выполнением команды <span style="color: green">git push</span> необходимо авторизоваться в GitHub с использованием
     персонального токена. Без этого опубликовать изменения в удалённый репозиторий не получится.</p>
     <a href="https://playwright.dev/python/" target="_blank">Python</a>
@@ -56,6 +96,17 @@
         </tr>
         </tbody>
     </table>
+    <div class="nth">
+        <p>1</p>
+        <p>2</p>
+        <h6>3</h6>
+        <h5>4</h5>
+        <p>5</p>
+    </div>
+</div>
+<div class="java-script">
+    <h2 class="h2-text">h2 text</h2>
+    <a href="https://playwright.dev/python/" target="_blank">JavaScript</a>
 </div>
 </body>
 </html>
